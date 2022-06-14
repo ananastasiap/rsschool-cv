@@ -1,8 +1,150 @@
 img {
-    width: 300px;
-    height: 310px;
-}
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
 
 body {
-    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #1A3651;
+    }
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+.nav-list {
+        list-style: none;
+    }
+
+.nav-link {
+        padding: 0 20px;
+        line-height: 50px;
+    }
+
+.nav-link {
+        transition: .3s;
+    }
+
+
+.section-item a {
+    color: #28547F;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+.section-item a:hover {
+    color: #000000;
+  }
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.section {
+    width: 50%;
+  }
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+
+.section-title {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #28547F;
+  }
+  
+.h1 {
+  font-size: 34px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #28547F;
+    transition: color 0.5s;
+  }
+
+.link:hover {
+    color: #28547F;
+  }
+
+.nav-link {
+  text-decoration: none;
+  color: #28547F;
+  transition: color 0.5s;
+}
+
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #1A3651;
+}
+
+.rss {
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  background-image: url("./assets/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #28547F;
+  transition: color 0.5s;
+}
+  
+
+.section {
+    width: calc(50% - 20px);
+    padding: 15px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #000000;
 }
