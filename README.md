@@ -1,1 +1,0 @@
-https://ananastasiap.github.io/rsschool-cv/
