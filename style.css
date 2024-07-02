@@ -34,7 +34,8 @@ body {
 
 @media (hover: hover) {
   .nav-link:hover,
-  .section-item a:hover {
+  .section-item a:hover,
+  .experience-link a:hover {
     color: #5382b1;
     transform: scale(1.2);
   }
@@ -98,10 +99,14 @@ body {
   border-radius: 50%;
 }
 
+.experience-link a,
 .section-item a {
   transition: all 0.5s;
 }
 
 .skills-item {
   list-style-type: "🐻";
+}
+.experience-link a {
+  display: inline-block;
 }
