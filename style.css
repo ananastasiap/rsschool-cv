@@ -101,3 +101,7 @@ body {
 .section-item a {
   transition: all 0.5s;
 }
+
+.skills-item {
+  list-style-type: "🐻";
+}
