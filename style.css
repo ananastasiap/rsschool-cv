@@ -1,3 +1,4 @@
+/* GENERAL */
 html {
   scroll-behavior: smooth;
 }
@@ -12,8 +13,53 @@ img {
 
 a {
   text-decoration: none;
+  color: #28547f;
+  transition: all 0.5s;
 }
 
 li {
   list-style-type: none;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Lato", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #1a3651;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* HEADER */
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 20px;
+  color: #28547f;
+  line-height: 50px;
+}
+.nav-link:hover {
+  color: #5382b1;
+  transform: scale(1.2);
 }
