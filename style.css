@@ -13,10 +13,6 @@ a {
   transition: all 0.5s;
 }
 
-li {
-  list-style-type: none;
-}
-
 body {
   background-color: antiquewhite;
   font-family: "Lato", sans-serif;
@@ -46,6 +42,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style-type: none;
 }
 
 .nav-link {
@@ -97,6 +94,10 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.contacts-list {
+  list-style-type: none;
 }
 
 .experience-link a,
