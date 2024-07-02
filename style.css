@@ -31,10 +31,17 @@ body {
 @media (hover: hover) {
   .nav-link:hover,
   .section-item a:hover,
-  .experience-link a:hover {
+  .experience-link a:hover,
+  .footer-link:hover {
     color: #5382b1;
     transform: scale(1.2);
   }
+}
+
+.experience-link a,
+.section-item a,
+.footer-link {
+  transition: all 0.5s;
 }
 
 /* HEADER */
@@ -100,14 +107,28 @@ body {
   list-style-type: none;
 }
 
-.experience-link a,
-.section-item a {
-  transition: all 0.5s;
-}
-
 .skills-item {
   list-style-type: "🐻";
 }
 .experience-link a {
   display: inline-block;
+}
+
+/* FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  color: #1a3651;
+}
+
+.rss {
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  background-image: url("./assets/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
