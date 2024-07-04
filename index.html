@@ -3,12 +3,188 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV | RS School</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <button class="menu__open" id="btnOpentNav" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100">
+            <path
+              d="M13 29.908c0 0 3.887-1.186 10.237-2.424 6.347-1.239 15.169-2.501 24.951-2.646 9.782-.142 18.638.862 25.018 1.915 6.383 1.052 10.303 2.124 10.303 2.124s-3.972.865-10.352 1.751c-6.383.885-15.162 1.819-24.856 1.96-9.694.143-18.496-.534-24.902-1.232C16.996 30.656 13 29.908 13 29.908zM13.02 52.356c0 0 16.009-4.436 35.924-5.131 19.915-.695 36.194 2.614 36.194 2.614S69.13 54.275 49.215 54.97C29.3 55.665 13.02 52.356 13.02 52.356zM14.643 74.235c0 0 16.323-4.291 36.58-4.807S88 72.369 88 72.369s-16.323 4.291-36.58 4.807C31.163 77.691 14.643 74.235 14.643 74.235z">
+            </path>
+          </svg>
+        </button>
+        <div class="menu">
+          <button class="menu__close" id="btnCloseNav">x</button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
+  <div class="main">
+    <div class="container main-container">
+      <!-- profile -->
+      <section class="section">
+        <h1 class="main-title">Anastasia Popova</h1>
+        <img src="assets/img/avatar.jpg" alt="avatar" class="profile-logo">
+      </section>
+
+      <!-- contacts -->
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contact information</h2>
+        <ul class="section-list contacts-list">
+          <li class="section-item contacts-item">
+            Email: <a href="mailto:anestheziia@gmail.com" title="email" target="_blank">anestheziia@gmail.com</a>
+          </li>
+          <li class="section-item contacts-item">
+            GitHub: <a href="https://github.com/ananastasiap" title="github" target="_blank">ananastasiap</a>
+          </li>
+          <li class="section-item contacts-item">
+            LinkedIn: <a href="https://www.linkedin.com/in/ananastasia-popova/" title="linkedin"
+              target="_blank">Anastasia
+              Popova</a>
+          </li>
+          <li class="section-item contacts-item">
+            RS School Discord server: Anastasia Popova (@ananastasiap)
+          </li>
+        </ul>
+      </section>
+
+      <!-- about me -->
+      <section class="section" id="summary">
+        <h2 class="section-title">About me</h2>
+        <p>
+          I was in the philological faculty, but in my second year, I got acquainted with Python and programming in
+          general. I tried NLP, ML, and backend development, but in the end, I decided to focus on frontend development.
+          I also like the theme of accessibility!
+        </p>
+      </section>
+
+      <!-- skills -->
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="skills-item">
+            &nbsp;JavaScript, TypeScript
+          </li>
+          <li class="skills-item">
+            &nbsp;HTML, CSS, Scss/Sass, Bootstrap
+          </li>
+          <li class="skills-item">
+            &nbsp;React, Redux
+          </li>
+          <li class="skills-item">
+            &nbsp;Git
+          </li>
+        </ul>
+      </section>
+
+      <!-- code -->
+      <section class="section" id="code">
+        <h2 class="section-title">Code Example</h2>
+        <pre>
+          <code>
+    let calculate = (...x) => {
+    return (...y) => {
+    return [...x, ...y].reduce(
+      (sumOfNum, num) => sumOfNum + num
+      );
+    };
+    };
+          </code>
+        </pre>
+      </section>
+
+      <!-- experience -->
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <ul class="experience-list">
+          <li class="section-item experience-link">
+            <a href="https://ananastasiap.github.io/omnifood/" title="omnifood" target="_blank">Omnifood</a> <br>
+            - stack: JavaScript, HTML, CSS
+          </li>
+          <li class="section-item experience-link">
+            <a href="https://github.com/ananastasiap/game-of-arrows" title="Game of arrows" target="_blank">Game of
+              arrows</a> <br>
+            - stack: React, TypeScript, Redux Toolkit, MaterialUI
+          </li>
+        </ul>
+      </section>
+
+      <!-- education -->
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul class="section-list">
+          <li class="section-item education-item">
+            University: Higher School of Economics, Philology (bachelor degree)
+          </li>
+          <li class="section-item">
+            HarvardX CS50x: <a href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/home" title="CS50x"
+              target="_blank">CS50's Introduction to Computer Science</a>
+          </li>
+          <li class="section-item">
+            Wes Bos: <a href="https://wesbos.com/javascript" title="wesbos" target="_blank">JavaScript beginner</a>
+          </li>
+          <li class="section-item">
+            Code Basics: <a href="https://code-basics.com/ru/languages/css" title="codebasicscss" target="_blank">CSS
+              Basics</a>
+          </li>
+          <li class="section-item">
+            Code Basics: <a href="https://code-basics.com/ru/languages/html" title="codebasicshtml" target="_blank">HTML
+              Basics</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- languages -->
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
+        <ul class="section-list">
+          <li class="section-item languages-item">
+            Russian - Native
+          </li>
+          <li class="section-item languages-item">
+            English - Intermediate
+          </li>
+          <li class="section-item languages-item">
+            German - Basic
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>© 2024 <a href="https://github.com/ananastasiap" class="footer-link">ananastasiap</a></div>
+      <a href="https://rs.school/courses/javascript-ru" class="rss" title="rss course" target="_blank"></a>
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="script.js"></script>
 </body>
 
 </html>
