@@ -168,6 +168,9 @@ body {
 .skills-item {
   list-style-type: "🐻";
 }
+.experience-list {
+  list-style-type: none;
+}
 .experience-link a {
   display: inline-block;
 }
