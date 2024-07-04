@@ -20,6 +20,10 @@ a {
   transition: var(--transition);
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 body {
   background-color: #faebd7;
   font-family: "Lato", sans-serif;
