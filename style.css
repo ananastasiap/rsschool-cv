@@ -77,8 +77,10 @@ body {
   .menu {
     position: fixed;
     inset: 0;
+    height: 60%;
     padding: 30px;
     background-color: #a56953;
+    border-radius: 0 0 10% 10%;
     translate: 200vw 0;
     transition: var(--transition);
   }
@@ -90,12 +92,12 @@ body {
     background: none;
   }
   .menu__close {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #fff;
     transition: var(--transition);
   }
   .menu__open {
-    width: 86px;
+    width: 60px;
     height: auto;
   }
   .menu__close:active {
@@ -105,8 +107,8 @@ body {
     flex-direction: column;
   }
   .nav-link {
-    margin-bottom: 65px;
-    font-size: 40px;
+    margin-bottom: 15px;
+    font-size: 30px;
     color: #fff;
   }
 
