@@ -77,7 +77,7 @@ body {
   .menu {
     position: fixed;
     inset: 0;
-    height: 60%;
+    height: 90%;
     padding: 30px;
     background-color: #a56953;
     border-radius: 0 0 10% 10%;
@@ -108,7 +108,7 @@ body {
   }
   .nav-link {
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
   }
 
